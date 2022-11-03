@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+ 
+    import Table from './components/Table';
+   
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  function App() {
+    
+    /*
+    Flight_Api devolve um promise,prosmise tem tres estados, quando fullied imprime-se os dados
+    Para ter acesso aos dados é necessario fazer then(result=> console.log(data))
 
-export default App;
+    result devolve um array com 2996, slice(0,n) devolve um array com tamanho n 
+    */
+
+
+    // console.log(data) //Visualizar os dados vindo da API
+  
+    return (
+    
+        <div className='departures'>
+          
+          <h1> DEPARTURES ✈️</h1>
+            <Table/> 
+        </div>
+      
+    );
+  }
+
+  export default App;
+
+ 

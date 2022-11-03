@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+ *{
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(240, 240, 240);
+  font-size: 35px;
+ }
+
+ body{
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  align-items: center;
+  
+  background: rgb(236,142,95);
+  background: linear-gradient(153deg, rgba(236,142,95,0.76234243697479) 2%, rgba(216,217,11,1) 100%);
+ }
+
+ h1{
+  padding: 20px;
+ }
+
+ .departures{
+      background-color: rgb(6,6,6);
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: rgba(50,50, 93, 0.25) 0 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+  }
+
+  .departures table{
+    background-color: rgb(46, 46, 46);
+    text-align: left;
+  }
+
+  .departures table div {
+    border: solid 4px rgb(26, 26, 26);
+    background-color: rgb(0,0,0);
+    min-width: 20px;
+    height: 40px;
+    float: left;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#time {
+  width: 260px;
+}
+
+#destination {
+  width: 500px;
+}
+
+#flight {
+  width: 205px;
+}
+
+#gate {
+  width: 48 5px;
+}
+
+#remarks {
+  width: 260px;
+}
+
+.flip {
+  animation: 0.5s linear flipping;
+}
+
+@keyframes flipping {
+  0% {
+      transform: rotateX(0deg);
+  }
+  50% {
+      transform: rotateX(90deg);
+  }
+  100% {
+      transform: rotateX(0deg);
+  }
 }
